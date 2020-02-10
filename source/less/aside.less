@@ -1,0 +1,110 @@
+.aside{
+	display: none;
+}
+
+@media (min-width:@tablet)  {
+
+}
+
+
+
+@media (min-width:@desktop)  {
+	.main{
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.main-wrapper{
+		width: 98%;
+	}
+	.content-wrapper{
+		padding: 0 15px;
+		padding-right: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.left-col{
+		width: 56.9%;
+		margin-right: 20px;
+	}
+
+	.right-col{
+		width: 43.1%;
+	}	
+
+}
+
+@media (min-width:1370px)  {
+	.aside{
+		display: block;
+		width: 5.6%;
+
+		&__list{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+
+		&__item{
+			padding: 6px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+
+			width: 60px;
+			height: 60px;
+			border-radius: 4px;
+	 		border: solid 1px #2a2e41;
+	 		margin-bottom: 20px;
+	 		background-image: url(../images/SVG/group-5.svg);
+	 		background-repeat: no-repeat;
+	 		background-position: center 5px;
+
+	 		&:nth-of-type(1){
+				background-image: url(../images/SVG/group-5.svg);
+				background-position: center center;
+	 		}
+
+	 		&:nth-of-type(2){
+				background-image: url(../images/SVG/rocket.svg);
+	 		}
+
+	 		&:nth-of-type(3){
+				background-image: url(../images/SVG/casino.svg);
+	 		}
+
+	 		&:nth-of-type(4){
+				background-image: url(../images/SVG/dice.svg);
+	 		}
+
+	 		&:nth-of-type(5){
+				background-image: url(../images/SVG/diamond-chip.svg);
+	 		}
+
+	 		&--active{
+	 			box-shadow: 0 5px 0 0 #0c0e1c;
+				border: solid 1px rgba(238, 232, 232, 0.07);
+				background-color: #25283c;
+	 		}
+
+	 		& a{
+	 			opacity: 0.25;
+			  font-family: Inter;
+			  font-size: 10px;
+			  font-weight: 600;
+			  color: #c5ceff;	
+	 		}
+		}
+	}
+
+	.main-wrapper{
+		width: 94.4%;
+	}
+
+	.content-wrapper{
+		padding: 0 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+}

@@ -1,0 +1,62 @@
+.inter{
+	font-family: 'Inter';
+	font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5em;
+  letter-spacing: 0.2px;
+  color: #73757f;
+
+}
+
+@import url(fonts.less);
+@import url(variables.less);
+@import url(mixins.less);
+@import url(header.less);
+@import url(info.less);
+@import url(footer.less);
+@import url(stats.less);
+@import url(aside.less);
+@import url(roulette.less);
+@import url(tabs-stats.less);
+@import url(tabs-market.less);
+@import url(champions.less);
+@import url(market.less);
+@import url(show.less);
+@import url(last.less);
+@import url(chat.less);
+@import url(modal.less);
+@import url(serving-blocks.less);
+
+/* navigation */
+nav {
+    height: 100%;
+    width: 280px;
+
+    left: 0;
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: visible;
+    transform: translate(-280px,0);
+}
+/* overlay layer */
+.ssm-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+  	background-color: #171a2b;
+    display: none;
+    z-index: 21;
+}
+
+/* prevent scroll when nav is open */
+.is-navOpen{
+  overflow: hidden;
+}
+
+
+

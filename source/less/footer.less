@@ -1,0 +1,251 @@
+.footer{
+	background-color: #161929;
+	font-size: 14px;
+	text-transform: none;
+	&__wrapper{
+		padding: 28px 14px 35px 14px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__content{
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	&__content-item{
+		padding: 0 16px;
+		margin-bottom: 15px;
+		border-right: 1px solid rgba(#fff,0.09);
+		text-transform: none;
+
+
+		& a{
+			font-size: 14px;
+			word-wrap: nowrap;
+		}
+		
+		&:nth-of-type(1){
+		}
+
+		&:nth-of-type(2){
+			margin-right: calc(100% - 425px);
+			border: 0;
+
+
+		}
+
+		&:nth-of-type(3){
+		}
+
+		&:nth-of-type(4){
+			border: 0;
+		}
+
+	}
+
+	&__social{
+		margin:0 14px;
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	&__social-item{
+		position: relative;
+		padding-left: 34px;
+		margin-bottom: 15px;
+
+		& a{
+			font-size: 14px;
+		}
+
+		&:before{
+			position: absolute;
+			left: 0;
+			bottom: -3px;
+		}
+
+		&--tw:before{
+			content: url(../images/SVG/twitter.svg);
+		}
+
+		&--tg:before{
+			content: url(../images/SVG/telegram.svg);
+		}
+
+		&--in:before{
+			content: url(../images/SVG/linkedin.svg);
+		}
+	}
+
+	&__logo{
+		padding-top: 20px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		&-img{
+			width: 171px;
+			height: 32px;
+		}
+	}
+}
+
+// @media (max-width:374px)  {
+// 	.footer{
+// 		&	&__content a{
+// 				font-size: 11px;
+// 		}
+
+		
+
+		
+
+// 		&__social-item a{
+// 				font-size: 12px;
+// 		}
+
+// 		&__social{
+// 			margin-top: 15px;
+// 		}
+// 	}
+// }
+
+@media (min-width:768px)  {
+	.footer{
+		margin: 20px;
+		margin-top: 0;
+		border-radius: 4px;
+		height: 230px;
+		&__content{
+			justify-content: center;
+		}
+
+		&__wrapper{
+			padding: 28px 10px 35px 10px;
+			display: flex;
+			flex-direction: column;
+	}
+
+		&__user{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__content-item{
+			padding: 0 20px;
+
+			& a{
+				font-size: 18px;
+			}
+			
+			&:nth-of-type(1){
+				padding-left: 20px;
+			}
+
+			&:nth-of-type(2){
+				margin-right: 0;
+				padding-right: 20px;
+				border-right: 1px solid rgba(#fff,0.09);;
+			}
+
+			&:nth-of-type(3){
+				padding-left: 20px;
+			}
+
+		}
+
+		&__social{
+			width: 56%;
+		display: flex;
+		justify-content:space-between;
+
+	}
+
+	&__social-item{
+		position: relative;
+		padding-left: 34px;
+		margin-bottom: 15px;
+
+		& a{
+			font-size: 14px;
+		}
+
+		&:before{
+			position: absolute;
+			left: 0;
+			bottom: -3px;
+		}
+
+		&--tw:before{
+			content: url(../images/SVG/twitter.svg);
+		}
+
+		&--tg:before{
+			content: url(../images/SVG/telegram.svg);
+		}
+
+		&--in:before{
+			content: url(../images/SVG/linkedin.svg);
+		}
+	}
+	}
+	
+}
+
+@media (min-width:1370px)  {
+	.footer{
+		height: 120px;
+		margin: 0 20px;
+		margin-left: 7%;
+		margin-bottom: 24px;
+		&__wrapper{
+			padding: 20px 40px 20px 30px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__content-item{
+			padding: 0 40px;
+			margin-bottom: 15px;
+			border-right: 1px solid rgba(#fff,0.09);
+			text-transform: none;
+
+			&:nth-of-type(2){
+				padding-right: 40px;
+			}
+
+			&:nth-of-type(3){
+				padding-left: 40px;
+			}
+		}
+
+		&__social{
+			width: 100%;
+			margin-left: 40px;
+			justify-content: flex-start;
+		}
+
+		&__social-item{
+			margin-right: 52px;
+		}
+
+		&__logo{
+			padding-top: 20px;
+			display: flex;
+			font-weight: 400;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: flex-end;
+			justify-content: center;
+		}
+	}
+
+}

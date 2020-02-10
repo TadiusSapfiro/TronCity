@@ -1,0 +1,218 @@
+.champions{
+padding-bottom: 23px;
+	&__list{
+		padding: 23px 13px 0 13px;
+		
+	}
+
+
+
+	&__header{
+		width: 100%;
+		display: flex;
+
+		align-items: center;
+	}
+
+	&__deck{
+		display: none;
+		position: relative;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		justify-content: flex-start;
+		display: flex;
+	}
+
+	&__image{
+		width: 100%;
+	}
+
+	&__cart{
+		width: 35px;
+	  height: 35px;
+	  border-radius: 4px;
+	  margin-right: 10px;
+
+	  &--1-star{
+	  	border: solid 1px #1386de;
+  background-color: rgba(19, 134, 222, 0.3);
+	  }
+
+	  &--2-star{
+	  border: solid 1px #129a69;
+  background-color: rgba(18, 154, 105, 0.3);
+	  }
+
+	  &--3-star{
+	  	  border: solid 1px #cb19d7;
+  background-color: rgba(203, 25, 215, 0.3);
+		}
+	  &--4-star{
+	  	border: solid 1px #f84e4e;
+  background-color: rgba(248, 78, 78, 0.3);
+	  }
+
+	  &--5-star{
+	  	border: solid 1px #efd13a;
+	  background-color: rgba(239, 209, 58, 0.3);
+	  }
+
+	  &--gold{
+	  	background-image: linear-gradient(33deg, #f87e35, #fdc01c 34%, #fdd668 55%, #f4aa0d 77%, #ffe88a);
+	  }
+	}
+
+	&__item{
+		padding-right: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 16px;
+		height: 40px;
+	  border-radius: 30px;
+	  background-color: #25283c;
+
+	  &--open{
+	  	height: auto;
+	  	&	.champions__deck{
+				display: flex !important;
+			}
+
+			& .champions__open{
+				transform: rotate(180deg);
+			}
+	  }
+
+	  &:nth-of-type(1){
+	  	& .champions__name{
+	  		color: #ffd629;
+	  	}
+	  	& .champions__position{
+	  		border: solid 4px rgba(12, 14, 28, 0.3);
+  background-image: linear-gradient(42deg, #f87e35, #fdc01c 34%, #fdd668 55%, #f4aa0d 77%, #ffe88a);
+	  	}
+			
+	  }
+
+	  &:nth-of-type(2){
+	  	& .champions__name{
+	  		color: #dddce3;
+	  	}
+	 		 &	.champions__position{
+			border: solid 4px rgba(12, 14, 28, 0.3);
+  background-image: linear-gradient(42deg, #ffffff, #b0ada6 26%, #fffbef 55%, #dcd8cf 76%, #ffffff);
+	 	 	}
+		}
+	  &:nth-of-type(3){
+	  	& .champions__name{
+	  		color: #cd824d;
+	  	}
+	    .champions__position{
+			border: solid 4px rgba(12, 14, 28, 0.3);
+  background-image: linear-gradient(42deg, #c27843, #765037 26%, #ab8a5b 55%, #866238 76%, #4f301b);
+		  }
+	  }
+	}
+
+	 
+
+	&__position{
+
+		position: relative;
+		top:0px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 46px;
+	  height: 46px;
+	  border: solid 4px #34384b;
+		border-radius: 50%;
+	  background-color: #25283c;
+	   text-shadow: 0 1px 0 #0c0e1c;
+	  -webkit-text-stroke: 1px #0c0e1c;
+	  font-size: 28px;
+	  color: #fff9e7;
+
+
+
+
+	}
+
+	&__name{
+		text-shadow: 0 1px 0 #0c0e1c;
+	  -webkit-text-stroke: 1px #0c0e1c;
+	  font-size: 18px;
+	  color: #ffffff;
+	  margin-left: 10px;
+	  margin-right: 20px;
+	  overflow: auto;
+	  text-overflow: ellipsis;
+	   white-space: nowrap;
+	}
+
+	&__score{
+		position: relative;
+		margin-left: auto;
+		padding-right: 40px;
+		text-shadow: 0 1px 0 #0c0e1c;
+	  -webkit-text-stroke: 1px #0c0e1c;
+	  font-size: 15px;
+	  color: #ffffff;
+
+	  &:after{
+	  	content: '';
+	  	display: inline-block;
+	  	position: absolute;
+	  	top:0px;
+	  	right: 15px;
+	  	width: 16px;
+	  	height: 15px;
+	  	background-image: url(../images/SVG/rectangle.svg);
+	  	background-size: cover;
+
+	  }
+	}
+
+	&__open{
+		display: block;
+		position: relative;
+		left:-8px;
+		width: 14px;
+		height: 7px;
+		background-image: url(../images/SVG/arrow.svg);
+		background-color: transparent;
+		background-repeat: no-repeat;
+		border: 0;
+		cursor: pointer;
+		outline: none;
+	}
+
+	&__place{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 40px;
+	  background-color: #25283c;
+	  text-shadow: 0 1px 0 #0c0e1c;
+  -webkit-text-stroke: 1px #0c0e1c;
+  font-size: 18px;
+
+  color: #ffffff;
+	}
+
+}
+
+@media (min-width:@tablet)  {
+		.champions__cart{
+			width: 60px;
+		  height: 60px;
+		  border-radius: 4px;
+		  margin-right: 10px;
+	 	}
+}
+
+
+
+@media (min-width:@desktop)  {
+
+}
